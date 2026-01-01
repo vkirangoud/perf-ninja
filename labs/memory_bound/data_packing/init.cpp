@@ -1,4 +1,3 @@
-
 #include "solution.h"
 #include <random>
 
@@ -14,7 +13,7 @@ S create_entry(int first_value, int second_value) {
   return entry;
 }
 
-void init(std::array<S, N> &arr) {
+void init(std::vector<S> &arr) {
   std::default_random_engine generator;
   std::uniform_int_distribution<int> distribution(minRandom, maxRandom - 1);
 
